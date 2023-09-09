@@ -8,9 +8,14 @@
 		"context": ".."
 	},
 	"features": {
-		"ghcr.io/devcontainers/features/nvidia-cuda:1": { 
-		  "installCudnn": true
-		}
+		"ghcr.io/devcontainers/features/nvidia-cuda:1": {},
+		"ghcr.io/devcontainers/features/python:1": {},
+		"ghcr.io/devcontainers-contrib/features/bandit:2": {},
+		"ghcr.io/devcontainers-contrib/features/black:2": {},
+		"ghcr.io/devcontainers-contrib/features/flake8:2": {},
+		"ghcr.io/devcontainers-contrib/features/pylint:2": {},
+		"ghcr.io/devcontainers-contrib/features/ruff:1": {},
+		"ghcr.io/devcontainers-contrib/features/yapf:2": {}
 	  },
 
 	// Configure tool-specific properties.

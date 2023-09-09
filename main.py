@@ -1,11 +1,16 @@
 """
-Main cli or app entry point
+Factory function to raise a number to the power of n.
 """
 
-import numpy as np
-
+def power(n):
+    def power_n(num):
+        return num ** n
+    return power_n
 
 if __name__ == "__main__":
-    # pylint: disable=no-value-for-parameter
-    arr = np.array([1, 2, 3])
-    print('Done.')
+
+    squarer = power(2)
+    print(squarer(3))
+
+    cuber = power(3)
+    print(cuber(3))
